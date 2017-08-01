@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>圆周运动</title>
+<style>
+body{background:#16171B;}
+#demo{ width:100px;height:100px;border-radius:100px;border:3px solid #D6D8ED;margin:50px auto;box-shadow:inset 10px 10px 10px #0B090C,inset -10px -10px 10px #0B090C,3px 0px 60px rgba(74,94,157,.8),0px -5px 60px rgba(74,94,157,.8);
+background:#202125; position:absolute; top:300px; left:500px;}
+</style>
+</head>
+
+<body>
+<div id="demo">
+</div>
+<script type="text/javascript">
+function circle(id,R,speed,time){
+        speed=speed||10;
+        time=time;
+        var x=document.getElementById(id).offsetLeft;
+        var y=document.getElementById(id).offsetTop;
+        var step = 1;
+        var r = 1;
+        var timer=setInterval(function () {
+                r=r+1;
+                 if(r>R){
+                        r-=1;
+                }
+                if (step == 360) {
+                        step = 1;
+                }
+                if(time!=undefined){
+                setTimeout(function(){clearInterval(timer);},time);
+                }
+                document.getElementById(id).style.left = x+ r * Math.sin(step)+"px";
+                document.getElementById(id).style.top = y+ r * Math.cos(step)+"px";
+                step -= speed/100;
+        }, 1);
+}        
+circle("demo",300,1);
+</script>
+</body>
+</html> 

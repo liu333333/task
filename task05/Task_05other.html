@@ -1,0 +1,347 @@
+<!doctype html>
+<head>
+<title>BaiduIFE Task02</title>
+
+<style type="text/css">
+body {
+	font-family:"Microsoft Yahei";
+	margin: 0px;
+	padding: 0;
+	background-color: #dedede;
+}
+header {
+	background-color: #333333;
+}
+header .logo {
+	float: left;
+	max-height: 48px;
+	margin: 10px 40px 3px 40px;
+}
+.header-nav {
+	float: right;
+	display: inline-block;
+	list-style: disc;
+}
+.header-nav li {
+	float: left;
+	margin-left: 1em;
+}
+.header-nav li a {
+	color: white;
+	text-decoration: none;
+	font-size: 10px;
+	margin-right: 1em;
+}
+main {
+	position: relative;
+	padding: 1px;
+}
+.passage {
+	margin: 30px 500px 30px 30px;
+	padding: 20px;
+	background-color: white;
+	box-shadow: 3px 3px 3px #999999;
+}
+.passage img {
+	max-width: 350px;
+}
+.passage ul {
+	list-style: none;
+}
+nav:after,.pictures:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.pictures p {
+	margin: 0 0 10px 0;
+	text-align: center;
+}
+.pictures div {
+	border: 1px solid #cccccc;
+	padding: 10px;
+	margin: 10px;
+	display: inline-block;
+	float: left;
+}
+.pictures img {
+	max-width: 100px;
+}
+h3 {
+	color: #777;
+	font-size: 1em;
+}
+p.author-time {
+	color: #999;
+	font-size: 0.8em;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+thead {
+	background-color: #333;
+	color: white;
+	font-weight: bold;
+	text-align: left;
+}
+tfoot {
+	background-color: #ccc;
+	font-weight: bold;
+}
+th,td {
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+.sidebar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 30px;
+	width: 400px;
+}
+.sidebar>h2 {
+	font-size: 1em;
+	padding: 10px;
+	border-left: 5px solid #ccc;
+}
+label.title {
+	display: inline-block;
+	text-align: right;
+	width: 30%;
+	margin-right: 1em;
+	margin-top: 0.7em;
+}
+.hint {
+	color: #999;
+	font-size: 0.7em;
+}
+.form-block {
+	display: inline-block;
+	vertical-align: text-top;
+}
+textarea {
+	vertical-align: text-top;
+	width: 60%;
+	height: 10em;
+}
+.form-submit {
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+	background-color: #35d;
+	border-radius: 10px;
+}
+footer {
+	text-align: center;
+	padding: 20px;
+	color: white;
+	font-weight: bold;
+	background-color: black;
+}
+</style>
+</head>
+
+<body>
+<header>
+	<img class="logo" src="logo.png"/>
+	<nav>
+		<ul class="header-nav">
+			<li><a href="#nav-link-1" title="一个链接">导航链接一</a></li>
+			<li><a href="#nav-link-2" title="一个链接">导航链接二</a></li>
+			<li><a href="#nav-link-3" title="一个链接">导航链接三</a></li>
+			<li><a href="#nav-link-4" title="一个链接">导航链接四</a></li>
+		</ul>
+	</nav>
+	</header>
+
+	<main>
+	<div class="passage">
+		<h2>文章一级标题</h2>
+		<h3>文章二级标题</h3>
+		<p class="author-time">文章作者 文章发表时间</p>
+
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</br>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" title="一个链接">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+
+		<img src="keyboard.jpg" alt="好看的键盘"/>
+
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>
+		这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank" title="一个链接">这里有一个链接点击后打开新窗口连接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+	</div>
+
+	<div class="passage">
+		<h2>另一篇文章一级标题</h2>
+		<h3>文章二级标题</h3>
+		<p class="author-time">文章作者 文章发表时间</p>
+
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</br>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" title="一个链接">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+
+		<img src="keyboard.jpg" alt="好看的键盘"/>
+
+		<ul>
+			<li>列表项目一</li>
+			<li>列表项目二</li>
+			<li>列表项目三</li>
+		</ul>
+	</div>
+
+	<div class="passage">
+		<h2>图片</h2>
+		<div class="pictures">
+			<div>
+				<p>好看的图片</p>
+				<img src="keyboard.jpg" alt="好看的键盘"/>
+			</div>
+			<div>
+				<p>好看的图片</p>
+				<img src="keyboard.jpg" alt="好看的键盘"/>
+			</div>
+			<div>
+				<p>好看的图片</p>
+				<img src="keyboard.jpg" alt="好看的键盘"/>
+			</div>
+			<div>
+				<p>好看的图片</p>
+				<img src="keyboard.jpg" alt="好看的键盘"/>
+			</div>
+			<div>
+				<p>好看的图片</p>
+				<img src="keyboard.jpg" alt="好看的键盘"/>
+			</div>
+			<div>
+				<p>好看的图片</p>
+				<img src="keyboard.jpg" alt="好看的键盘"/>
+			</div>
+			<div>
+				<p>好看的图片</p>
+				<img src="keyboard.jpg" alt="好看的键盘"/>
+			</div>
+			<div>
+				<p>好看的图片</p>
+				<img src="keyboard.jpg" alt="好看的键盘"/>
+			</div>
+			<div>
+				<p>好看的图片</p>
+				<img src="keyboard.jpg" alt="好看的键盘"/>
+			</div>
+			<div>
+				<p>好看的图片</p>
+				<img src="keyboard.jpg" alt="好看的键盘"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="passage">
+		<h2>最后一篇文章一级标题</h2>
+		<h3>文章二级标题</h3>
+		<p class="author-time">文章作者 文章发表时间</p>
+		<ol>
+			<li>排名1</li>
+			<li>排名2</li>
+			<li>排名3</li>
+		</ol>
+
+		<p>
+		下面是一个表格，给表格加了一个border="1"好让你看出是一个表格，你们不用写html时候不需要加<br/>
+		<table>
+			<thead>
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>总计</td>
+					<td colspan="2">1000</td>
+				</tr>
+			</tfoot>
+			<tbody>
+			<tr>
+				<td>表格内容单元</td>
+				<td>表格内容单元</td>
+				<td><a href="#" title="一个链接">操作</a></td>
+			</tr>
+			<tr>
+				<td>表格内容单元</td>
+				<td>表格内容单元</td>
+				<td><a href="#" title="一个链接">操作</a></td>
+			</tr>
+			<tr>
+				<td>表格内容单元</td>
+				<td>表格内容单元</td>
+				<td><a href="#" title="一个链接">操作</a></td>
+			</tr>
+			<tr>
+				<td>表格内容单元</td>
+				<td>表格内容单元</td>
+				<td><a href="#" title="一个链接">操作</a></td>
+			</tr>
+			</tbody>
+		</table>
+		</p>
+	</div>
+
+	<div class="passage sidebar">
+		<h2>这里以后是一个侧栏，这是侧栏标题</h2>
+		<form onsubmit="return false">
+			<div>
+				<label class="title">请输入邮箱地址</label>
+				<div class="form-block">
+					<input type="text" placeholder="这是一个文本输入框"/>
+					<p class="hint">邮箱地址请按要求格式输入</p>
+				</div>
+			</div>
+			<div>
+				<label class="title">请输入密码</label>
+				<input type="password" value="passworld"/>
+			</div>
+			<div>
+				<label class="title">请重复输入密码</label>
+				<div class="form-block">
+					<input type="password" value="passworld"/>
+					<p class="hint">密码请为6-16位英文数字</p>
+				</div>
+			</div>
+			<div>
+				<label class="title">姓别</label>
+				<input id="gender-male" type="radio" name="gender" value="male" checked="true"/>
+				<label for="gender-male">男</label>
+				<input id="gender-female" type="radio" name="gender" value="female"/>
+				<label for="gender-female">女</label>
+			</div>
+			<div>
+				<label class="title">城市</label>
+				<select name="city">
+					<option value="beijing">北京</option>
+					<option value="not-beijing">不是北京</option>
+				</select>
+			</div>
+			<div>
+				<label class="title">爱好</label>
+				<input id="hobby-sport" type="checkbox" name="hobby" value="sport"/>
+				<label for="hobby-sport">运动</label>
+				<input id="hobby-art" type="checkbox" name="hobby" value="art"/>
+				<label for="hobby-art">艺术</label>
+				<input id="hobby-science" type="checkbox" name="hobby" value="science"/>
+				<label for="hobby-science">科学</label>
+			</div>
+			<div>
+				<label class="title">个人描述</label>
+				<textarea>这是一个多行输入框，输入您的个人描述</textarea>
+			</div>
+			<input class="form-submit" type="submit" value="确认提交"></input>
+		</form>
+	</div>
+	</main>
+
+	<footer>版权所有&copy;</footer>
+	</body>

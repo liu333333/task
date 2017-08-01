@@ -1,0 +1,49 @@
+<html>
+<head>
+<style type="text/css">
+    .item{ 
+        width:20px; 
+        height:20px;
+        border-radius:10px;
+        background: blue;
+        position: absolute;
+    }/*border-radius圆角半径*/
+    #point{ 
+        left:95px; 
+        top:295px;
+    }
+    #centre{ 
+        left:195px; 
+        top:295px;
+    }
+    .circle{ 
+        width:200px; 
+        height:200px; 
+        border:1px red solid; 
+        border-radius:100px; 
+        position: absolute; 
+        top:200px; 
+        left:100px;
+    }
+</style>
+</head>
+
+<body>
+    <div id="point" class="item"><big>&nbsp&nbsp&nbspRUN!Lamborghini</big></div>
+    <div id="centre" class="item"></div>
+    <div class="circle"></div>
+</body>
+
+<script type="text/javascript">
+    var r = 100; //半径
+    var a = 0;   //角度
+    var obj = document.getElementById('point');//js必须写在<body>后面，否则obj=null；
+    // 基点坐标为200,300
+    setInterval(function(){
+        obj.style.left = (190 - Math.cos(a) * r) + 'px';/*style 很重要*/
+        obj.style.top = (290 - Math.sin(a) * r) + 'px';
+        a += 0.1; //角度随时增大，产生绕圈的效果
+    }, 50);//every 50/1s run function() one time;
+</script>
+
+</html>

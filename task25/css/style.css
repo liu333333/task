@@ -1,0 +1,51 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#main {
+	width: 400px;
+	height: auto;
+	border: 1px solid gray;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.btn-1 {
+	/* opacity:  透明度*/
+	position: relative;
+	width: 100%;
+	opacity: 0.3;
+	cursor: pointer;
+	top: 0px;
+	height:30px;
+
+}
+
+.relative1 {
+	position: relative;
+    top: -25px;
+    left: 10px;
+}
+
+.cell1 {
+	position: relative;
+    top: -20px;
+    left: 30px;
+}
+
+.cell2 {
+	position: relative;
+	top: -20px;
+	left: 20px;
+	margin-top: -10px;
+	display: none;
+}
+.cell2n01 {
+	position: relative;
+    top: -15px;
+    left: 20px;
+}
+.cell1 input:checked~.cell2 {
+	display: block;
+}

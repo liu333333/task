@@ -1,0 +1,39 @@
+#flex {
+	display: flex;
+	justify-content: space-between;
+	width: auto;
+	height: auto;
+	align-items: center;
+}
+
+.flex-1,.flex-2,.flex-3,.flex-4 {
+	width: 150px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.flex-1,.flex-2,.flex-3 {
+	border: 1px solid red;
+}
+.flex-4 {
+	border: 1px solid blue;
+	height: 200px;
+}
+.flex-1 {
+	height: 120px;
+}
+.flex-2 {
+	height: 100px;
+}
+.flex-3 {
+	height: 40px;
+}
+
+@media (max-width: 640px) {
+	.flex-4 {
+		order: -1;
+	}
+	#flex {
+		flex-wrap:wrap;
+		align-items: flex-start;
+	}
+}

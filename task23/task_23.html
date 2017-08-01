@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	#main {
+		width: 1180px;
+		display: inline-flex;
+		display: -webkit-flex; /* Safari */ 
+		justify-content: space-around; /* 所有的项目等分剩余的容器空间，包括第一个和最后一个项目（所以项目之间的间隔比第一个和最后一个项目与容器边框的间隔大一倍） */ 
+		align-items: center;/* 项目会堆放在容器交叉轴的居中位置（ center of the cross axis ） */ 
+		height: 400px;
+		z-index: 1;
+	}
+	div {
+		border: 2px solid #000000;
+	}
+
+
+	.second,.third {
+		display: inline-flex;
+		display: -webkit-flex; /* Safari */ 
+		justify-content: space-around;
+		align-items: center;
+	}
+	.second {
+		/* width: 360px; */
+		height: 350px;
+		z-index: 2;
+	}
+	.third {
+		/* width: 150px; */
+		height: 300px;
+		z-index: 3;
+	}
+	.fourth {
+		/* width: 60px; */
+		height: 150px;
+		z-index: 4;
+	}
+	.bluebc {
+		background-color: blue;
+	}
+	button {
+		width: 120px;
+		height: 50px;
+		background: gray;
+		font-size: 14px;
+	}
+</style>
+<body>
+	<div id="main">
+	super
+		<div class="second">
+		car
+			<div class="third">
+			apple
+				<div class="fourth">
+					pear
+				</div>
+				<div class="fourth">
+					pig
+				</div>
+				<div class="fourth">
+					cala
+				</div>
+				<div class="fourth">
+					soccer
+				</div>
+			</div>
+			<div class="third">
+				phone
+			</div>
+			<div class="third">
+				<div class="fourth">
+					book
+				</div>
+				<div class="fourth">
+					school
+				</div>
+			</div>
+		</div>
+		<div class="second">
+			note
+			<div class="third">
+				human
+				<div class="fourth">
+					codo
+				</div>
+				<div class="fourth">
+					operate
+				</div>
+				<div class="fourth">
+					man
+				</div>
+			</div>
+			<div class="third">
+				program
+				<div class="fourth">
+					element
+					<div class="fifth">
+						cat
+					</div>
+				</div>
+				<div class="fourth">
+					glass
+				</div>
+			</div>
+		</div>
+		<div class="second">
+			fish
+		</div>
+	</div>
+	<button id="btn1">深度优先遍历</button>
+	<button id="btn2">广度优先遍历</button>
+	<label>搜索</label>
+	<input type="text" id="input1"></input>
+	<button id="btn3">深度优先遍历查询</button>
+	<button id="btn4">广度优先遍历查询</button>
+	<script src="task.js"></script>
+</body>
+</html>
